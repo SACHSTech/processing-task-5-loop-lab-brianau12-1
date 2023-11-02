@@ -134,9 +134,9 @@ public class Sketch extends PApplet {
     int intY = 0;
 
     for(int intRow = 1; intRow <= 30; intRow++){
-      for(int intColumn = 1; intColumn < intRow; intColumn++){
+      for(int intColumn = 1; intColumn <= intRow; intColumn++){
         intX = 3 + (30 - intColumn) * 10;  
-        intY = intRow * 10 - 7;
+        intY = 3 + intRow * 10;
         
         fill(255);
         rect(intX, intY, 5, 5);
